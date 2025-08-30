@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import streamlit as st
 
+
 from modules.blog_generator import generate_blog
 from modules.summarizer import summarize_file
 from modules.history import save_history, load_history
@@ -119,3 +120,4 @@ elif section == "History":
             st.subheader(f"{summary['file_name']} ({summary['summary_style']}) - {summary['timestamp']}")
             st.write(summary['content'])
             st.info(f"Embeddings stored in: {summary['embeddings_file']}")
+
