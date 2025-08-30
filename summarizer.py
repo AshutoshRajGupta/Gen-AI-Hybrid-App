@@ -7,7 +7,9 @@ from PyPDF2 import PdfReader
 from modules.prompts import SUMMARIZER_PROMPT
 
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+import streamlit as st 
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = google_api_key
 
 def read_file(file):
     """Reads uploaded TXT or PDF file and returns text content."""
@@ -36,3 +38,4 @@ def summarize_file(file, style: str, prompt_template: str = SUMMARIZER_PROMPT) -
     prompt = prompt_template.format(text=text, style=style)
     response = llm.invoke(prompt)
     return response.content
+
