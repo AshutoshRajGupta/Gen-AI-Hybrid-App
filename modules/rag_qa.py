@@ -8,8 +8,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from PyPDF2 import PdfReader
 
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
-
+import streamlit as st 
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = google_api_key
 # Initialize embeddings
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
@@ -45,3 +46,4 @@ def answer_question(question, persist_dir="chroma_store"):
     prompt = f"Answer the question based on the context below:\n\n{context}\n\nQuestion: {question}\nAnswer:"
     response = llm.invoke(prompt)
     return response.content
+
