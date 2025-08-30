@@ -1,0 +1,23 @@
+[
+    {
+        "file_name": "Manali_itinerary.pdf",
+        "summary_style": "concise",
+        "content": "A budget-friendly 2-day Manali itinerary includes visits to Hadimba Temple, Manu Temple, Mall Road, Old Manali, Vashisht Hot Springs, and Rohatang Pass.  Expect to spend \u20b96,100-\u20b910,500 (\u20b912,200-\u20b921,000 for two) covering accommodation, food, transport, and activities.  Pre-booking accommodation and avoiding peak season are recommended.",
+        "embeddings_file": "summarizer_embeddings.txt",
+        "timestamp": "2025-08-30 14:48:52"
+    },
+    {
+        "file_name": "Manali_itinerary.pdf",
+        "summary_style": "concise",
+        "content": "A 2-day budget Manali itinerary includes visits to Hadimba Temple, Manu Temple, Mall Road, Old Manali, Vashisht Hot Springs, Rohatang Pass, and the Manali Museum.  Expect to spend \u20b96,100-\u20b910,500 (\u20b912,200-\u20b921,000 for two) covering accommodation, food, transport, and activities.  Pre-booking accommodation and avoiding peak season are recommended.",
+        "embeddings_file": "summarizer_embeddings.txt",
+        "timestamp": "2025-08-30 15:02:35"
+    },
+    {
+        "file_name": "Manali_itinerary.pdf",
+        "summary_style": "concise",
+        "content": "A budget-friendly 2-day Manali itinerary includes visits to Hadimba Temple, Manu Temple, Mall Road, Old Manali, Vashisht Hot Springs, Rohatang Pass, and the Manali Museum.  Expect to spend \u20b96,100-\u20b910,500 (\u20b912,200-\u20b921,000 for two) covering accommodation, food, transport, and activities.  Pre-booking accommodation and avoiding peak season (June-September) are recommended.",
+        "embeddings_file": "summarizer_embeddings.txt",
+        "timestamp": "2025-08-30 15:12:17"
+    }
+]
